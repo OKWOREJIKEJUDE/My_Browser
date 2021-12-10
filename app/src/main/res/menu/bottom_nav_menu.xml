@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Left"
+        android:icon="@drawable/ic_chevron_left_black_24dp"
+        android:title="" />
+
+    <item
+        android:id="@+id/Right"
+        android:icon="@drawable/ic_chevron_right_black_24dp"
+        android:title="" />
+
+    <item
+        android:id="@+id/bottomShow"
+        android:icon="@drawable/ic_menu_black_24dp"
+        android:title="" />
+
+    <item
+        android:id="@+id/Home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="" />
+
+    <item
+        android:id="@+id/Outline"
+        android:icon="@drawable/ic_check_box_outline_blank_black_24dp"
+        android:title="" />
+
+</menu>

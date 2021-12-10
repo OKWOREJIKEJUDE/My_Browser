@@ -1,0 +1,93 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory>
+        <SwitchPreferenceCompat
+            app:key="sync"
+            app:title="Set as Default Browser" >
+        </SwitchPreferenceCompat>
+    </PreferenceCategory>
+
+
+    <PreferenceCategory>
+        <ListPreference
+            app:defaultValue="reply"
+            app:entries="@array/reply_entries"
+            app:entryValues="@array/reply_values"
+            app:key="reply"
+            app:title="Search Engine"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory>
+        <SwitchPreferenceCompat
+            app:key="sync"
+            app:title="Lock portrait screen" >
+        </SwitchPreferenceCompat>
+    </PreferenceCategory>
+
+    <PreferenceCategory>
+        <ListPreference
+            app:defaultValue="reply"
+            app:entries="@array/reply_entries"
+            app:entryValues="@array/reply_values"
+            app:key="reply"
+            app:title="Brightness"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory>
+        <SwitchPreferenceCompat
+            app:key="sync"
+            app:title="Show go to top button" >
+        </SwitchPreferenceCompat>
+    </PreferenceCategory>
+
+    <PreferenceCategory>
+        <SwitchPreferenceCompat
+            app:key="sync"
+            app:title="Auto switch day and night mode" >
+        </SwitchPreferenceCompat>
+    </PreferenceCategory>
+
+    <PreferenceCategory>
+        <ListPreference
+            app:defaultValue="reply"
+            app:entries="@array/reply_entries"
+            app:entryValues="@array/reply_values"
+            app:key="reply"
+            app:title="Download Location"
+            app:useSimpleSummaryProvider="true">
+        </ListPreference>
+    </PreferenceCategory>
+
+    <PreferenceCategory>
+        <ListPreference
+            app:defaultValue="reply"
+            app:entries="@array/reply_entries"
+            app:entryValues="@array/reply_values"
+            app:key="reply"
+            app:title="Privacy"
+            app:useSimpleSummaryProvider="false">
+        </ListPreference>
+    </PreferenceCategory>
+
+    <PreferenceCategory>
+        <SwitchPreferenceCompat
+            app:key="sync"
+            app:title="Allow sites to open new windows" >
+        </SwitchPreferenceCompat>
+    </PreferenceCategory>
+
+    <PreferenceCategory>
+        <ListPreference
+            app:defaultValue="reply"
+            app:entries="@array/reply_entries"
+            app:entryValues="@array/reply_values"
+            app:key="reply"
+            app:title="Restore to default settings"
+            app:useSimpleSummaryProvider="false">
+        </ListPreference>
+    </PreferenceCategory>
+
+</PreferenceScreen>

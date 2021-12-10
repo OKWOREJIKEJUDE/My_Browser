@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/paleWhite"
+    tools:context=".WebviewActivity">
+
+    <RelativeLayout
+        android:id="@+id/mySecondLayout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/curves1">
+
+        <ImageView
+            android:id="@+id/myFirstWebviewImageview"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/googleslogo1"/>
+
+        <TextView
+            android:id="@+id/myTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginEnd="13dp"
+            android:layout_toStartOf="@+id/mySecondWebviewImageview"
+            android:layout_toEndOf="@id/myFirstWebviewImageview"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:text="Search or enter address"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/mySecondWebviewImageview"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15sp"
+            android:background="@drawable/ic_refresh_black_24dp"/>
+
+    </RelativeLayout>
+    <ProgressBar
+        android:id="@+id/myProgressBar"
+        android:layout_below="@id/mySecondLayout"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1.85dp"/>
+
+    <WebView
+        android:id="@+id/myWebView"
+        android:layout_below="@id/myProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </WebView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true">
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/myWebBottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:background="#FAFAFA"
+            app:itemIconTint="#7E7E7E"
+            app:labelVisibilityMode="unlabeled"
+            app:menu="@menu/bottom_nav_menu" />
+
+    </RelativeLayout>
+</RelativeLayout>

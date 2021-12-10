@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:textSize="18sp">
+
+        <RadioButton
+            android:id="@+id/google"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Google"
+            android:paddingStart="20dp"
+            android:layout_marginTop="0dp"
+            android:textSize="18sp"/>
+
+        <RadioButton
+            android:id="@+id/bing"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Bing"
+            android:paddingStart="20dp"
+            android:layout_marginTop="0dp"
+            android:textSize="18sp"/>
+
+        <RadioButton
+            android:id="@+id/duckduckgo"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="DuckDuckGo"
+            android:paddingStart="20dp"
+            android:layout_marginTop="0dp"
+            android:textSize="18sp"/>
+
+        <RadioButton
+            android:id="@+id/yahoo"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Yahoo"
+            android:paddingStart="20dp"
+            android:layout_marginTop="0dp"
+            android:textSize="18sp"/>
+
+        <RadioButton
+            android:id="@+id/baidu"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Baidu"
+            android:paddingStart="20dp"
+            android:layout_marginTop="0dp"
+            android:textSize="18sp"/>
+
+        <RadioButton
+            android:id="@+id/startpage"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="StartPage"
+            android:paddingStart="20dp"
+            android:layout_marginTop="0dp"
+            android:textSize="18sp"/>
+    </RadioGroup>
+
+</RelativeLayout>
